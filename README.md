@@ -23,8 +23,13 @@ Este proyecto tiene como objetivo principal la **clasificación automática de r
 
 - Las imágenes fueron obtenidas desde internet, específicamente de fuentes de **licencia pública y uso educativo** ya que no queremos tener problemas de **copyright**.
  
-  ![gato1](https://github.com/user-attachments/assets/aae4d348-184b-4821-ac39-e73247441d0c) ![image](https://github.com/user-attachments/assets/2c5091ae-fad5-4c20-baa5-0da19f9daf50).
-  *imágenes tomadas de internet con **licencia pública***
+ <div align="center">
+  <img src="image/image1.jpg" alt="gato1" width="400px">
+  <img src="image/image2.png" alt="imagen externa" width="400px">
+  <p><em>Imágenes tomadas de internet con <strong>licencia pública</strong></em></p>
+</div>
+
+
 
 
 - Se identificaron **problemas de desbalance**, ya que algunas razas tienen muchas más imágenes que otras. Esto se dejó así por fines prácticos del entrenamiento y análisis del modelo, no obstante, se plantea como una línea de mejora futura.
@@ -36,7 +41,7 @@ Una de las funcionalidades más prácticas de **MichiRazaDetector** es la capaci
 
 <div align="center">
 
-  <img src="https://github.com/user-attachments/assets/aae4d348-184b-4821-ac39-e73247441d0c" alt="interfaz de imagenes" width="70%">
+  <img src="image/herramienta.png" alt="interfaz de imagenes" width="70%">
 
   <p><em>Herramienta para la eliminación de las imágenes no deseadas.</em></p>
 
@@ -78,7 +83,7 @@ Esto se puede deber a la baja cantidad o baja calidad de imágenes para esas cla
 Esta matriz muestra cómo se distribuyen las predicciones correctas y erróneas entre las distintas razas:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/tu_imagen_matriz_confusion.png" alt="Matriz de Confusión" width="70%">
+  <img src="image/matriz de confusion.png" alt="Matriz de Confusión" width="70%">
 </p>
 
 <p align="center"><em>Nota: Esta visualización es útil para identificar razas que se confunden fácilmente entre sí.</em></p>
@@ -90,7 +95,7 @@ Esta matriz muestra cómo se distribuyen las predicciones correctas y erróneas 
 A continuación se muestra la evolución de la precisión y la pérdida durante el entrenamiento y validación del modelo:
 
 <p align="center">
-  <img src="./4b291e2d-371c-4626-8ee2-5bfc076f42bb.png" alt="Precisión y pérdida del modelo" width="90%">
+  <img src="image/precicion del modelo y perdida.png" alt="Precisión y pérdida del modelo" width="90%">
 </p>
 
 Durante las primeras épocas, se observa un rápido incremento en la precisión del entrenamiento, mientras que la precisión de validación se estabiliza más pronto, lo cual puede ser indicativo de **sobreajuste**.  
@@ -107,14 +112,22 @@ Se calcularon y visualizaron las curvas ROC para cada una de las clases utilizan
 
 A continuación, los resultados visuales por clase:
 
-| Clase | Curva ROC |
-|-------|-----------|
-| Clase 1 | ![ROC Clase 1](sandbox:/mnt/data/242c7734-7c19-4a90-a8b2-1b03482d2780.png) |
-| Clase 2 | ![ROC Clase 2](sandbox:/mnt/data/01442769-abbb-460f-b6c9-8dff4fdd4f80.png) |
-| Clase 3 | ![ROC Clase 3](sandbox:/mnt/data/26d9fa02-b2ae-433f-ab1e-4e0a029ed122.png) |
-| Clase 4 | ![ROC Clase 4](sandbox:/mnt/data/5e934711-31ab-4da9-b1f4-90c54e10948d.png) |
-| Clase 5 | ![ROC Clase 5](sandbox:/mnt/data/0c17f4d0-f0c1-4946-a00b-40f96bca3088.png) |
-| Clase 6 | ![ROC Clase 6](sandbox:/mnt/data/1c117029-5fb9-4d56-a41a-e90fcda1eebb.png) |
+<div align="center"">
+  <div>
+    <img src="image/roc1.png" alt="ROC Clase 1" width="400px" style="margin: 10px;">
+    <img src="image/roc2.png" alt="ROC Clase 2" width="400px" style="margin: 10px;">
+  </div>
+  <div>
+    <img src="image/roc3.png" alt="ROC Clase 3" width="400px" style="margin: 10px;">
+    <img src="image/roc4.png" alt="ROC Clase 4" width="400px" style="margin: 10px;">
+  </div>
+  <div>
+    <img src="image/roc5.png" alt="ROC Clase 5" width="400px" style="margin: 10px;">
+    <img src="image/roc6.png" alt="ROC Clase 6" width="400px" style="margin: 10px;">
+  </div>
+</div>
+
+
 
 **Observaciones:**
 - Algunas clases (por ejemplo, *Bombay cat* o *Lykoi cat*) muestran curvas con alta AUC (> 0.9), lo cual indica buen rendimiento.
@@ -226,11 +239,11 @@ Esta herramienta permite observar cómo el modelo se comporta en condiciones rea
 A continuación se presentan cinco ejemplos de imágenes de validación seleccionadas aleatoriamente y evaluadas por el modelo:
 
 <p align="center">
-  <img src="random1.png" width="30%" style="margin: 5px;">
-  <img src="random2.png" width="30%" style="margin: 5px;">
-  <img src="random3.png" width="30%" style="margin: 5px;"><br>
-  <img src="random4.png" width="30%" style="margin: 5px;">
-  <img src="random5.png" width="30%" style="margin: 5px;">
+  <img src="image/random1.png" width="30%" style="margin: 5px;">
+  <img src="image/random2.png" width="30%" style="margin: 5px;">
+  <img src="image/random3.png" width="30%" style="margin: 5px;"><br>
+  <img src="image/random4.png" width="30%" style="margin: 5px;">
+  <img src="image/random5.png" width="30%" style="margin: 5px;">
 </p>
 
 <p align="center"><em>Cada imagen fue seleccionada y evaluada aleatoriamente desde el conjunto de validación. Se muestra la clase verdadera, la clase predicha y el nivel de confianza.</em></p>
@@ -246,7 +259,7 @@ Se incluye una interfaz web con Gradio donde puedes:
   ### 📷 Ejemplo de visualización
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/imagen_random_predicha.png" alt="Predicción aleatoria" width="60%">
+  <img src="image/analizador.png" alt="Predicción aleatoria" width="80%">
 </p>
 
 <p align="center"><em>La imagen cargada es evaluada en tiempo real y visualizada con su clase predicha y el nivel de confianza.</em></p>
