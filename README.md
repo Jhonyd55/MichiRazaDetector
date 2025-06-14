@@ -1,5 +1,15 @@
 # 🐾 MichiRazaDetector
 
+<div align="center">
+  <a href="https://colab.research.google.com/github/Jhonyd55/MichiRazaDetector/blob/main/MichiRazaDetector.ipynb" target="_blank">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Abrir en Colab" style="width:220px;">
+  </a>
+</div>
+
+
+
+
+
 **MichiRazaDetector** es una herramienta creada por un amante de los gatitos, sin experiencia formal en razas de gatos, pero con el deseo de aprender y crear algo útil y bonito para la comunidad gatuna. Esta aplicación te permite clasificar imágenes de gatos por raza a través de modelos de machine learning y también limpiar tu dataset eliminando imágenes no deseadas.
 
 Este proyecto tiene como objetivo principal la **clasificación automática de razas de gatos** utilizando técnicas de aprendizaje profundo, específicamente *Transfer Learning* con un modelo basado en `MobileNetV2`. Está diseñado para ser **escalable**, de manera que se puedan incorporar nuevas razas o técnicas sin necesidad de rehacer todo el pipeline.
